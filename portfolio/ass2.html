@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio using Bootstrap</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" defer ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" defer></script>
+</head>
+<body data-spy="scroll" data-target=".navbar">
+  <div id="main-nav">
+    <nav class="navbar navbar-expand-sm navbar-light fixed-top ">
+    <div class="container">
+     
+        <button class="navbar-toggler"  data-toggle="collapse" data-target="#Navbar" >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="#" class="navbar-brand mt-2 mt-lg-0"><h3>Arti Khillare</h3></a>
+        <div class="collapse navbar-collapse" id="Navbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> 
+  </div>
+   
+  <section id="home" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-6 custom-col">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="mailto:agkhillare99@gmail.com"><i class="fas fa-envelope-open-text border border-dark rounded-circle p-2"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/arti-khillare-0770a8204"><i class="fab fa-linkedin border border-dark rounded-circle p-2"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/Arti-Khillare/thorium.git"><i class="fab fa-github border border-dark rounded-circle p-2"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://join.skype.com/invite/wmOU17xhr0ty"><i class="fab fa-skype border border-dark rounded-circle p-2"></i></a>
+            </li>
+          </ul>
+          
+          <p class="lead "><h4>Hi, I am Arti.</h4>
+            I am <strong>Software Developer</strong> I mostly focus on Backend Development in Nodejs Profile.
+            This is my portfolio site for <strong>Developer Portfolio</strong>,where I blog and share whatever projects 
+            I had work and whatever projects I've been working on.</p>
+          <div class="d-flex">
+           
+              <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                  Skills and Technologies
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">HTML</a>
+                  <a class="dropdown-item" href="#">CSS</a>
+                  <a class="dropdown-item" href="#">GitHub</a>
+                  <a class="dropdown-item" href="#">Postman</a>
+                  <a class="dropdown-item" href="#">Nodejs</a>
+                  <a class="dropdown-item" href="#">Javascript</a>
+                  <a class="dropdown-item" href="#">Express</a>
+                  <a class="dropdown-item" href="#">Mongodb</a>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="bg-light d-flex flex-column justify-content-center align-items-center">
+    <div class="container mt-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6 spacing">
+          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80" alt="" class="img-fluid ">
+        </div>
+        <div class="col-lg-6 spacing">
+          <p class="lead">I am Arti,<strong>Software Developer</strong> I mostly focus on Backend Development in Nodejs Profile.
+            This is my portfolio site for <strong>Developer Portfolio</strong>,where I blog and share whatever projects 
+            I had work and whatever projects I've been working on.
+          </p>
+          <a href = "#services" class="btn btn-dark pt-2">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="services" class="bg-light d-flex flex-column justify-content-center align-items-center">
+    <div class="container mt-5">
+      <div class=" text-center pt-5">
+        <h2 class="display-4 pt-5">My Services</h2>
+        <p class="lead">I am backend developer in Nodejs So, I mostly focus on Backend Development in Nodejs Profile.
+          where I have experience in building in API developement by using CRUD operations for building rest api's.
+          I had work and whatever projects I've been working on.
+      </p>
+      
+      </div>
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          
+          <div class="card text-center p-5">
+            <i class="fas fa-cog card-icon mb-2"></i>
+            <h5 class="card-title my-5">API Development</h5>
+            <p class="card-text">Technology used like Nodejs, Javascript, Mongodb, Express and various other technologies related to backend development</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 mb-4">
+          
+          <div class="card text-center p-5">
+            <i class="fas fa-laptop card-icon mb-2"></i>
+            <h5 class="card-title my-5">Web Development</h5>
+            <p class="card-text">Technology used like HTML, CSS, Javascript, and various other technologies related to frontend development</p>
+          </div>
+        
+        </div>
+        
+        <div class="col-lg-4 mb-4">
+          <div class="card text-center p-5">
+            <i class="fas fa-laptop card-icon mb-2"></i>
+            <h5 class="card-title my-5">Backend Development</h5>
+            <p class="card-text">Technology used like Nodejs, Javascript, Mongodb, Express and various other technologies related to backend development</p>
+          </div>
+        </div>
+        </div><br>
+      </div>
+    </div>
+  </section>
+  <section id="portfolio" class="bg-light d-flex flex-column justify-content-center align-items-center">
+      <div class="container mt-5">
+        <div class="  pt-5">
+          <h2 class="display-4 pt-5">Portfolio</h2>
+          <p class="lead">I am backend developer in Nodejs So, I mostly focus on Backend Development in Nodejs Profile.
+            where I have experience in building  API development by using CRUD operations for building rest api's.
+          </p>
+        
+        </div>
+        
+        <div class="card text-center">
+          <div class="card-footer">
+            
+            <span class="bg-primary text-white">My Skills</span><hr class="bg-primary">
+            <div class="row">
+              <div class="col">
+                <div class="card bg-white">
+                  <h4 class="ml-3 my-3">HTML5 language</h4>
+                  <div class="progress mx-3">
+                    <div class="progress-bar" style="width:90%">90%</div>
+                  </div>
+                  <h4 class="ml-3 my-3">CSS3 language</h4>
+                  <div class="progress mx-3">
+                    <div class="progress-bar" style="width:80%">80%</div>
+                  </div>
+                  <h4 class="ml-3 my-3">Javascript Programming</h4>
+                  <div class="progress mx-3">
+                    <div class="progress-bar" style="width:95%">95%</div>
+                  </div>
+                  <h4 class="ml-3 my-3">Nodejs</h4>
+                  <div class="progress mx-3">
+                    <div class="progress-bar" style="width:95%">95%</div>
+                  </div>
+                  <h4 class="ml-3 my-3">Mongodb</h4>
+                  <div class="progress mx-3">
+                    <div class="progress-bar" style="width:90%">90%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text"></p>
+            <a href="https://docs.google.com/document/d/13dFPIXu0PSxzPZa9V70wrXy1YZRAI_iOvcoWxE7HHTg/edit?usp=sharing" class="btn btn-primary">View Resume</a>
+          </div>
+          
+        </div>
+        
+        </div>
+  </section>
+  <section id="contact" class="bg-light d-flex flex-column justify-content-center align-items-center">
+    <div class="container mt-5">
+      <span class="bg-dark text-white">Contact me</span><hr class="bg-dark">
+      <div class="row">
+        <div class="col">
+          <div class="card bg-white">
+            <div class="card-header">
+              <h4 class="my-4">Contact me on below</h4>
+             <div class="form-group">
+              <input type="text" placeholder="User name" class="form-control">
+             </div>
+             <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+             </div>
+             <div class="form-group">
+              <textarea class="form-control" placeholder="write something here...."></textarea> 
+             </div>
+              <div class="form-group">
+                <button class="btn btn-success text-white">Submit Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </section>
+</body> 
+</html>

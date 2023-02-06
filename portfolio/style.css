@@ -1,0 +1,76 @@
+html{
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    display : none
+}
+
+#main-nav {
+    background-color : transparent;
+}
+
+#section {
+    height : 100vh;
+    background: url("https://img.freepik.com/free-photo/hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg?w=1380&t=st=1675403730~exp=1675404330~hmac=6683bb11c9c84df3ffff3dea69c67a65ca395f90f2642ac280cee9b2acedc5f8");
+   
+}
+
+#home, #about, #portfolio{
+    background: url("https://img.freepik.com/free-photo/hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg?w=1380&t=st=1675403730~exp=1675404330~hmac=6683bb11c9c84df3ffff3dea69c67a65ca395f90f2642ac280cee9b2acedc5f8");
+    background-position: top;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size :cover
+}
+
+
+.container {
+    font-family: serif
+}
+.custom-col {
+    margin-top : 15%
+}
+
+i {
+    color : black
+}
+
+img{
+    filter : grayscale(1)
+}
+
+.img-fluid {
+    height :auto;
+}
+
+.spacing {
+    margin-top: 10%;
+}
+
+.card-icon{
+    font-size: 3rem;
+}
+
+
+
+/* If the screen size is 1200px wide or more, set the font-size to 80px */
+@media (min-width: 1200px) {
+    .responsive-font-example {
+      font-size: 80px;
+    }
+  }
+  /* If the screen size is smaller than 1200px, set the font-size to 80px */
+  @media (max-width: 1199.98px) {
+    .responsive-font-example {
+      font-size: 30px;
+    }
+  }
+
+.lead {
+ font-size: 30px;
+}
+
+#main-nav a:hover {
+    color :blue
+}

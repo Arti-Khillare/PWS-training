@@ -1,0 +1,333 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.main_header {
+  line-height: 1.2rem;
+  background-color: #ffffff;
+}
+.main_header .navbar-brand {
+  color: #f8a5c2;
+  animation: shop 1s linear infinite;
+  animation-direction: alternate;
+}
+.main_header .navbar-brand .fas {
+  font-size: 2rem;
+}
+@keyframes shop {
+  from {
+    transform: rotate(5deg);
+  }
+  to {
+    transform: rotate(-5deg);
+  }
+}
+.main_header .navbar-nav {
+  padding-left: 2rem;
+}
+.main_header .navbar-nav .nav-item .nav-link {
+  font-weight: 3rem;
+  font-size: 1rem;
+  color: black;
+  text-transform: uppercase;
+  padding-right: 2rem;
+}
+.main_header .navbar-nav .nav-item:last-child > .nav-link {
+  padding-right: 0rem;
+}
+.main_header .nav-item:hover > .nav-link, .main_header .navbar-brand:hover, .main_header .navbar-brand:hover > .fas {
+  color: #535c68;
+}
+.main_header .btn {
+  margin-left: 1rem;
+  padding: 0.3rem, 3.2rem;
+  padding-bottom: 0.4rem;
+  background-color: #0be881;
+  line-height: 1.5rem;
+  text-transform: capitalize;
+  color: black;
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  outline: none;
+}
+.main_header .btn:hover {
+  background-color: #535c68;
+  box-shadow: 0.1rem 1.5rem 2rem rgba(255, 255, 157, 0.4);
+  color: #4bcffa;
+  transform: translateY(-0.2rem);
+}
+
+.header {
+  width: 100%;
+  height: 100vw;
+}
+.header .card .card-img-overlay {
+  width: 100%;
+  height: 100%;
+}
+.header .img-section {
+  margin-right: 2rem;
+}
+
+.phone-section {
+  width: 100%;
+  background-color: #d1d8e0;
+}
+.phone-section .phone-section-text {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.phone-section .phone-section-text h2 {
+  color: rgb(93, 93, 242);
+  margin-right: 8rem;
+  margin-bottom: 3rem;
+}
+.phone-section .phone-section-text span {
+  color: rgb(94, 92, 94);
+}
+.phone-section .phone-section-text p {
+  align-items: center;
+  margin-left: 4rem;
+  margin-right: 2rem;
+  margin-bottom: 5rem;
+}
+.phone-section .phone-section-text .phone-section-btn {
+  display: flex;
+  margin-right: 18rem;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.phone-section .phone-section-text .phone-section-btn .btn {
+  border-radius: 4rem;
+  margin-bottom: 4rem;
+  padding: 0.8rem, 3.2rem;
+  padding-bottom: 0.4rem;
+  background-color: #7ed6df;
+}
+.phone-section .phone-section-text .phone-section-btn a {
+  margin-left: 1rem;
+  padding: 0.3rem, 3.2rem;
+  padding-bottom: 0.4rem;
+  background-color: #0be881;
+  line-height: 1.5rem;
+  text-transform: capitalize;
+  color: black;
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  outline: none;
+}
+.phone-section .phone-section-text .phone-section-btn :hover {
+  background-color: #535c68;
+  box-shadow: 0.1rem 1.5rem 2rem rgba(255, 255, 157, 0.4);
+  color: #4bcffa;
+  transform: translateY(-0.2rem);
+}
+.phone-section .phone-section-img {
+  margin-top: 2rem;
+  margin-left: 8rem;
+}
+.phone-section .card-group {
+  color: #222f3e;
+  font-weight: 400;
+}
+.phone-section .card-group .btn {
+  font-size: large;
+  font-weight: 400;
+  border-radius: 0.8rem;
+  background-color: #7ed6df;
+}
+.phone-section .card-group .lead :hover {
+  background-color: #535c68;
+  box-shadow: 0.1rem 1.5rem 2rem rgba(255, 255, 157, 0.4);
+  color: #4bcffa;
+  transform: translateY(-0.2rem);
+}
+
+.tv-section {
+  width: 100%;
+}
+.tv-section .img-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex;
+  flex-direction: column;
+}
+.tv-section .jumbotron {
+  height: 10rem;
+  background-color: #ff9ff3;
+  text-align: center;
+}
+.tv-section .jumbotron h2 {
+  margin-left: 8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222f3e;
+  margin-right: 8rem;
+  margin-bottom: 3rem;
+}
+.tv-section .jumbotron p {
+  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #222f3e;
+}
+.tv-section .jumbotron .btn {
+  font-size: larger;
+  font-weight: 400;
+  border-radius: 1rem;
+  margin-bottom: 4rem;
+  background-color: #7ed6df;
+}
+.tv-section .jumbotron .lead :hover {
+  background-color: #535c68;
+  box-shadow: 0.1rem 1.5rem 2rem rgba(255, 255, 157, 0.4);
+  color: #4bcffa;
+  transform: translateY(-0.2rem);
+}
+.tv-section .card-group {
+  color: #222f3e;
+  font-weight: 400;
+}
+.tv-section .card-group .btn {
+  font-size: large;
+  font-weight: 400;
+  border-radius: 0.8rem;
+  background-color: #7ed6df;
+}
+.tv-section .card-group .lead :hover {
+  background-color: #535c68;
+  box-shadow: 0.1rem 1.5rem 2rem rgba(255, 255, 157, 0.4);
+  color: #4bcffa;
+  transform: translateY(-0.2rem);
+}
+
+.lap-section {
+  width: 100%;
+  background-color: #d1d8e0;
+}
+.lap-section .lap-section-text {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.lap-section .lap-section-text h2 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.lap-section .lap-section-text h3 {
+  text-align: center;
+  margin-left: 1rem;
+  margin-bottom: 5rem;
+}
+.lap-section .lap-section-text p {
+  text-align: center;
+  margin-left: 1rem;
+  margin-bottom: 5rem;
+}
+.lap-section .lap-section-text .lap-section-btn {
+  display: flex;
+  margin-right: 18rem;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.lap-section .lap-section-text .lap-section-btn .btn {
+  margin-bottom: 4rem;
+  background-color: #7ed6df;
+  border-radius: 4rem;
+}
+.lap-section .lap-section-text .lap-section-btn a {
+  text-decoration: none;
+  margin-left: 1rem;
+  padding: 0.3rem, 3.2rem;
+  padding-bottom: 0.4rem;
+  background-color: #0be881;
+  line-height: 1.5rem;
+  text-transform: capitalize;
+  color: black;
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  outline: none;
+}
+.lap-section .lap-section-text .lap-section-btn :hover {
+  background-color: #535c68;
+  box-shadow: 0.1rem 1.5rem 2rem rgba(255, 255, 157, 0.4);
+  color: #4bcffa;
+  transform: translateY(-0.2rem);
+}
+.lap-section .lap-section-img {
+  margin-top: 2rem;
+  margin-left: 7rem;
+}
+.lap-section .card-group {
+  color: #222f3e;
+  font-weight: 400;
+}
+.lap-section .card-group .btn {
+  font-size: large;
+  font-weight: 400;
+  border-radius: 0.8rem;
+  background-color: #7ed6df;
+}
+.lap-section .card-group .lead :hover {
+  background-color: #535c68;
+  box-shadow: 0.1rem 1.5rem 2rem rgba(255, 255, 157, 0.4);
+  color: #4bcffa;
+  transform: translateY(-0.2rem);
+}
+.lap-section .jumbotron {
+  height: 10rem;
+  background-color: #ff9ff3;
+  text-align: center;
+}
+.lap-section .jumbotron h2 {
+  margin-left: 8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222f3e;
+  margin-right: 8rem;
+  margin-bottom: 3rem;
+}
+.lap-section .jumbotron p {
+  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #222f3e;
+}
+.lap-section .jumbotron .btn {
+  font-size: larger;
+  font-weight: 400;
+  border-radius: 1rem;
+  margin-bottom: 4rem;
+  background-color: #7ed6df;
+}
+.lap-section .jumbotron .lead :hover {
+  background-color: #535c68;
+  box-shadow: 0.1rem 1.5rem 2rem rgba(255, 255, 157, 0.4);
+  color: #4bcffa;
+  transform: translateY(-0.2rem);
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,332 @@
+@import './resets';
+@import './variables';
+@import './mixin';
+
+
+body{
+    background-color: $primary-color;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+.main_header {
+    line-height : 1.2rem;
+    background-color : $primary-color;
+
+
+    & .navbar-brand{
+        color : $icon-color;
+        animation : shop 1s linear infinite;
+        animation-direction: alternate;
+
+        & .fas {
+            font-size: 2rem;
+        }
+
+        @keyframes shop {
+            from{
+                transform: rotate(5deg);
+            }
+            to{
+                transform: rotate(-5deg)
+            }
+        }
+    }
+
+    & .navbar-nav {
+        padding-left: 2rem;
+
+        & .nav-item .nav-link{
+           font-weight: 3rem;
+           font-size : 1rem;
+           color : $text-color;
+           text-transform: uppercase;
+           padding-right: 2rem;
+        }
+
+        & .nav-item:last-child > .nav-link {
+            padding-right: 0rem;
+        }
+    }
+
+    & .nav-item:hover > .nav-link,
+    & .navbar-brand:hover,
+    & .navbar-brand:hover > .fas{
+        color : $hover-color
+    }
+   
+    & .btn{
+        @include mybtn;
+
+       &:hover{
+           @include hoverseffect;
+        }
+
+    }
+
+}
+
+
+//header part styles
+.header{
+    width : 100%;
+    height: 100vw; //80 viewport height
+
+    & .card .card-img-overlay{
+        width : 100%;
+        height: 100%;
+    }
+
+    & .img-section{
+        margin-right: 2rem;
+    }
+
+}
+
+//phone styling
+.phone-section{
+    width : 100%;
+    background-color: $phone-color;
+
+    & .phone-section-text{
+        margin-top: 4rem;
+
+        @include content_centre(flex-end);
+
+        & h2{
+            color : rgb(93, 93, 242);
+            margin-right: 8rem;
+            margin-bottom: 3rem;
+        }
+
+        & span{
+            color : rgb(94, 92, 94);
+        }
+
+        & p{
+            align-items: center;
+            margin-left: 4rem;
+            margin-right: 2rem;
+            margin-bottom: 5rem;
+        }
+
+        & .phone-section-btn{
+            display: flex;
+            margin-right: 18rem;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+
+            & .btn{
+                 border-radius: 4rem;
+                 margin-bottom: 4rem;
+                 padding : 0.8rem, 3.2rem;
+                 padding-bottom: 0.4rem;
+                 background-color:#7ed6df;
+            }
+
+            & a{
+                @include mybtn;
+            }
+
+            & :hover{
+                @include hoverseffect;
+            }
+        }
+    }
+    
+
+    & .phone-section-img{
+        margin-top: 2rem;
+        margin-left: 8rem;
+    }
+
+    & .card-group{
+        color:#222f3e;
+        font-weight: 400;
+       
+        
+        
+        & .btn{
+            font-size:large ;
+            font-weight: 400;
+            border-radius: 0.8rem;
+            background-color: #7ed6df;
+        }
+
+        & .lead :hover{
+            @include hoverseffect;
+        }
+    }
+  
+}
+
+//tvsection styling
+.tv-section{
+    width: 100%;
+
+    & .img-section {
+        @include content_centre(flex);
+    }
+
+    & .jumbotron{
+        height: 10rem;
+        background-color: #ff9ff3;
+        text-align: center;
+
+        & h2{
+            margin-left: 8rem;
+            font-family: Arial, Helvetica, sans-serif;
+            color :#222f3e;
+            margin-right: 8rem;
+            margin-bottom: 3rem;
+        }
+
+        & p{
+            font-weight: 300;
+            font-family:Arial, Helvetica, sans-serif;
+            text-align: center;
+            color : #222f3e
+        }
+
+        & .btn{
+            font-size:larger ;
+            font-weight: 400;
+            border-radius: 1rem;
+            margin-bottom: 4rem;
+            background-color: #7ed6df;
+        }
+
+        & .lead :hover{
+            @include hoverseffect;
+        }
+    }
+
+    & .card-group{
+        color:#222f3e;
+        font-weight: 400;
+
+       
+        
+        & .btn{
+            font-size:large ;
+            font-weight: 400;
+            border-radius: 0.8rem;
+            background-color: #7ed6df;
+        }
+
+        & .lead :hover{
+            @include hoverseffect;
+        }
+    }
+}
+
+//laptop styling
+.lap-section{
+    width : 100%;
+    background-color: $phone-color;
+
+    & .lap-section-text{
+        margin-top: 4rem;
+
+        @include content_centre(flex-end);
+
+        & h2{
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+
+        & h3{
+            text-align: center;
+            margin-left: 1rem;
+            margin-bottom: 5rem;
+        }
+
+        & p{
+            text-align: center;
+            margin-left: 1rem;
+            margin-bottom: 5rem;
+        }
+
+        & .lap-section-btn{
+            display: flex;
+            margin-right: 18rem;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+
+            & .btn{
+                margin-bottom: 4rem;
+                background-color:#7ed6df;
+                border-radius: 4rem;
+            }
+
+            & a{
+                text-decoration: none;
+                @include mybtn;
+            }
+
+            & :hover{
+                @include hoverseffect;
+            }
+        }
+    }
+    
+    & .lap-section-img{
+        margin-top: 2rem;
+        margin-left: 7rem;
+    }
+  
+    & .card-group{
+        color:#222f3e;
+        font-weight: 400;
+
+        & .btn{
+            font-size:large ;
+            font-weight: 400;
+            border-radius: 0.8rem;
+            background-color: #7ed6df;
+        }
+
+        & .lead :hover{
+            @include hoverseffect;
+        }
+    }
+
+    & .jumbotron{
+        height: 10rem;
+        background-color: #ff9ff3;
+        text-align: center;
+
+        & h2{
+            margin-left: 8rem;
+            font-family: Arial, Helvetica, sans-serif;
+            color :#222f3e;
+            margin-right: 8rem;
+            margin-bottom: 3rem;
+        }
+
+        & p{
+            font-weight: 300;
+            font-family:Arial, Helvetica, sans-serif;
+            text-align: center;
+            color : #222f3e
+        }
+
+        & .btn{
+            font-size:larger ;
+            font-weight: 400; 
+            border-radius: 1rem;
+            margin-bottom: 4rem;
+            background-color: #7ed6df;
+        }
+
+        & .lead :hover{
+            @include hoverseffect;
+        }
+    }
+}
+
